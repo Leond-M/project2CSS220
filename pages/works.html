@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Olivia Ros | Food Blogger</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon --> <!-- made by Leo M-->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/logo.png">
+
+ <!--  bootstrap 4 -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1d8e7c74e7.js"></script>
+
+ <!--  css styles -->
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/media_queries.css">
+
+</head>
+<body>
+<main class="container-fluid">
+   <!--  navbar --> <!-- made by Leo M-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="d-flex w-100 flex-row justify-content-between align-items-center">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/icons/logo.png" alt="Olivias logo" height="64px">
+                <img src="../assets/img/logo.png" alt="Olivias brand">
+            
+            </a>
+
+            <!-- collapsed navbar --> <!-- made by Leo M-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- links --> <!-- made by Leo M-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./works.html">Works done <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+ <!-- jumbotron --> <!-- Made by Leonardo Durante-->
+ <div class="jumbotron mt-5 mb-0">
+    <h1 class="display-4">Interested in my work?</h1>
+    <p class="lead">You can get a quick look at my portfolio, I have been all over the world taking pictures and learning about food.</p>
+    <hr class="my-4">
+    <p>If you want to know more, do not hesitate in contanting me!</p>
+    <p class="lead">
+      <a class="btn btn-info btn-lg" href="./contact.html" role="button">Contact me</a>
+    </p>
+  </div>
+
+
+
+    <!-- images cards first row --> <!-- made by Leo M-->
+    <section id="work" class="container-fluid p-5 bg-info">
+        <h2 class="display-4 text-center font-weight-bold my-4 text-white">My Works</h2>
+
+        <div class="card-deck">
+            <div class="card">
+                <img src="../assets/img/card-4.webp" class="card-img-top" alt="..." height="429px" width="429px">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">Chilaquiles</h5>
+                    <p class="card-text">This breakfast dish gets is tortillas topped with queso fresco or creme fraiche. It can be made with red or green salsa and sometimes includes avocado pieces, as well.</p>
+                    <a href="#" data-toggle="modal" data-target="#chilaquiles" class="btn btn-outline-info mr-4 align-self-start">
+                        Read more
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/img/card-3.jpg" class="card-img-top " alt="..." height="429px" width="429px">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">Alaska's Salmons</h5>
+                    <p class="card-text">It is a firecracker grilled Alaska salmon with peanut oil, balsamic vinegar, green onion, garlic, sesame oil, and a hot and sassy marinade that makes this dish stay in your mind for a long time.</p>
+                    <a href="#" data-toggle="modal" data-target="#salmons" class="btn btn-outline-info mr-4 align-self-start">
+                        Read more
+                    </a>
+                </div>
+            </div>           
+
+            <div class="card">
+                <img src="../assets/img/card-5.webp" class="card-img-top " alt="..." height="429px" width="429px">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">Feijoada</h5>
+                    <p class="card-text">This dish is composed of black beand and met stew. The meat might be beef tongue, pigs ears, tail or feet, fish or any kind of meat that is cheap but that can be flavored by the beans.</p>
+                    <a href="#" data-toggle="modal" data-target="#feijoada" class="btn btn-outline-info mr-4 align-self-start">
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<!-- images cards second row--> <!-- made by Leo M-->
+        <div class="card-deck mt-5">
+            <div class="card">
+                <img src="../assets/img/card-1.jpg" class="card-img-top" alt="..." height="429px" width="429px">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">Asado in Patagonia</h5>
+                    <p class="card-text">Asado a la patagonia is a cooking technique by which food (generally cuts of meat) is exposed to the heat of fire or embers so that they cook slowly.</p>
+                    <a href="#" data-toggle="modal" data-target="#asado" class="btn btn-outline-info mr-4 align-self-start">
+                        Read more
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../assets/img/card-6.webp" class="card-img-top " alt="..." height="429px" width="429px">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">Nihari</h5>
+                    <p class="card-text">It is shank meat stew with lamb, mutton, goat, chicken or beaf, cooked with masala, ginger, fennel, and onions.</p>
+                    <a href="#" data-toggle="modal" data-target="#nihari" class="btn btn-outline-info mr-4 align-self-start">
+                        Read more
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <img src="../assets/img/card-2.jpg" class="card-img-top " alt="..." height="429px" width="429px">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title">French Fries from the end of the world</h5>
+                    <p class="card-text">It is a mix of more than twelve different types of fired and baked potatoes with more than 12 different sauces to taste. The blend of cheese sauce with jalapeño is an unforgettable taste.</p>
+                    <a href="#" data-toggle="modal" data-target="#fries" class="btn btn-outline-info mr-4 align-self-start">
+                        Read more
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   <!--  images card modal --> <!-- made by Leo M-->
+   <div class="modal fade" id="chilaquiles" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Chilaquiles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="../assets/img/card-4.webp" class="img-fluid my-3" alt="...">
+                <p>If you go to Mexico, there is no way that you did not get this dish the first morning you woke there. This is one of the most common breakfasts there.  </p>
+                <p>Sooner than later, you will realize that everything is eaten with a tortilla there, 
+                    so you will have different tortilla dishes 24/7. If you do no like tortillas, this might not change your mind, 
+                    but as a fun fact, this dish has the colors of the Mexican flag.</p>
+
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="asado" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Asado in Patagonia</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="../assets/img/card-1.jpg" class="img-fluid my-3" alt="...">
+                    <p>After living in Chilean Patagonia for 12 months, I can say that the Asado is the best dish Chile has. </p>
+                    <p>The Patagonia area spans across southern Chile and Argentina, and it is a place full of life and nature. 
+                        It is like a place that man has not reached because you can see free-roaming animals like pumas huemúl 
+                        and others go through the city as if nothing happened.</p>
+                    <p>During this trip to Patagonia, I did not know what a real Asado was until I ate Asado with native people. 
+                        It probably was the best Asado I ever had. To cook the Asado, they used Antarctic Beech wood, water, salt, garlic clove, and pebre for 3 hours. 
+                        Three hours might sound like a lot of time, but it is a time I am willing to wait again.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="feijoada" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Feijoada</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="../assets/img/card-5.webp" class="img-fluid my-3" alt="...">
+                    <p>Beans and rice dishes are a staple in South America, so you frequently will find countries that eat one or the other 24/7.</p>
+                    <p>In Brazil, the national dish is feijoada which can have any meat as long as it can be flavored by the beans. 
+                        People with scarce resources might have created this dish to be able to eat something fulfilling and tasty at 
+                        the same time. No one can be sure, but what is a fact now is that it is a national dish in Brazil.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fries" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="">French Fries from the end of the world</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="../assets/img/card-2.jpg" class="img-fluid my-3" alt="..." >
+                    <p>Not so many times, I am in a situation in which I can not reveal the place's location, and this is one of those occasions.</p>
+                    <p>Natives want to keep the place a secret, so only worthy individuals are able to get there and enjoy the special mix of potatoes and sauces. 
+                        They were really marvelous, they were not too crispy and not too soft, they were at the perfect point, and the sauces had the right amount 
+                        of all the ingredients</p>
+                    <p>I really would like to go back there, but it looks like it is an experience of once in a lifetime.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="nihari" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="">Nihari</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="../assets/img/card-6.webp" class="img-fluid my-3" alt="..." >
+                    <p>I do not usually go to Pakistan, but when I go, I always make sure that I eat at least my weight worth on Nihari.</p>
+                    <p>It is one of my favorite stews in the entire world because it is a hot dish mostly made with beef and multiple 
+                        spices and ingredients. So there is nothing written about how to make the stew; making this dish always to have
+                         new flavors to discover, that for some reason they are always better than the previous one; it is like a dish that 
+                         constantly improves itself.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="salmons" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id=" ">Alaska's Salmons</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="../assets/img/card-3.jpg" class="img-fluid my-3" alt="...">
+                    <p>I love Alaska; you always feel like you are part of nature and that you do not need to worry about anything at all, with one exception, food.</p>
+                    <p>For some reason, when I am in Alaska, I always feel the need to catch/hunt my food, and this travel was not the exception. 
+                        I was capable of fishing some of Alaska's well-known salmons, which some locals helped me to cook using their unique recipes.</p>
+                    <p>I would not say that I am a lover of salmon, but holy molly, I would be lying if I said that I did not enjoy that salmon. 
+                        It was so tender and full of flavors that I fill like I was entering a spiritual trance, so I had to slow down and eat little bites.</p>
+                    <p>It is definitely a journey that I will do again.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer --> <!-- Made by Leonardo Durante-->
+    <footer class="bg-dark d-flex text-light flex-column text-center text-sm-left flex-sm-row p-3 justify-content-center justify-content-sm-between align-items-sm-end" style="height:95px;">
+        <h6 class="mb">Group 6. All rights reserved® 2022.</h6>
+        <h6>Images taken from <a target="_blank" href="https://unsplash.com"><i>Unsplash.com</i></a>.</h6>
+    </footer>
+</main>
+
+
+   <!-- used for the popover of the carousel to display the name of the companies and the modal of the cards, nothing else  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+ 
+</body>
+</html>

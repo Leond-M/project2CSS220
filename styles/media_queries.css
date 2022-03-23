@@ -1,0 +1,22 @@
+/* made by Leo M */
+/* equivalent to boostrap sm */
+@media(min-width: 575px){
+
+   /*  we need to override the !important from boostrap */
+    .container>.hero-title{
+        font-size: 100px;
+        text-align: right!important; 
+    }
+
+    .hero-subtitle{
+        text-align: right!important; 
+    }
+
+    section>.about-title{
+        font-size: 60px;
+    }
+
+    .table-container{
+        padding: 0 20%!important;
+    }
+}
