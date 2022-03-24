@@ -39,24 +39,23 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- links --> <!-- made by Leo M-->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./about.html">About Me <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./works.html">Works done</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        </div>
+        <!-- links --> <!-- made by Leo M-->
+        <div class="collapse navbar-collapse text-center text-nowrap" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./about.html">About Me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./works.html">Works done</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -115,75 +114,73 @@
             <table class="table table-hover text-center">
                 <thead class="thead-dark">
                 <tr>
-                    <th scope="col">Country</th>
-                    <th scope="col">Dish</th>
+                    <th scope="col" class="w-50">Country</th>
+                    <th scope="col" class="w-50">Dish</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>China</td>
-                    <td>Peking Duck</td>
-                </tr>
-                <tr>
-                    <td>India</td>
-                    <td>Khichdi</td>
-                </tr>
-                <tr>
-                    <td>United States</td>
-                    <td>Apple Pie</td>
-                </tr>
-
-                <tr>
-                    <td>Indonesia</td>
-                    <td>Nasi Goreng</td>
-                </tr>
-
-                <tr>
-                    <td>Pakistan</td>
-                    <td>Nihari</td>
-                </tr>
-
-                <tr>
-                    <td>Brazil</td>
-                    <td>Feijoada</td>
-                </tr>
-
-                <tr>
-                    <td>Nigeria</td>
-                    <td>Jollof Rice</td>
-                </tr>
-
-                <tr>
-                    <td>Bangladesh</td>
-                    <td>Hilsa Curry</td>
-                </tr>
-
-                <tr>
-                    <td>Russia</td>
-                    <td>Pelmeni</td>
-                </tr>
-
-                <tr>
-                    <td>Mexico</td>
-                    <td>Chilaquiles</td>
-                </tr>
+                <tbody id="table-food">
+                    <tr>
+                        <td>China</td>
+                        <td>Peking Duck</td>
+                    </tr>
+                    <tr>
+                        <td>India</td>
+                        <td>Khichdi</td>
+                    </tr>
+                    <tr>
+                        <td>United States</td>
+                        <td>Apple Pie</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Indonesia</td>
+                        <td>Nasi Goreng</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Pakistan</td>
+                        <td>Nihari</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Brazil</td>
+                        <td>Feijoada</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Nigeria</td>
+                        <td>Jollof Rice</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Bangladesh</td>
+                        <td>Hilsa Curry</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Russia</td>
+                        <td>Pelmeni</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Mexico</td>
+                        <td>Chilaquiles</td>
+                    </tr>
                 </tbody>
             </table>
 
 
              <!-- made by Leo M-->
-            <nav aria-label="Page navigation">
-                <div class="w-100 text-right"><b>This will not work without javascript</b></div>
-                
+            <nav aria-label="Page navigation">          
                 <ul class="pagination justify-content-end">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  <li id="previous" class="page-item disabled">
+                    <button  class="page-link" tabindex="-1" onClick="changeTablePage(-1, 'pager')">Previous</button>
                   </li>
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                  <li class="page-item pagination-item active"><button class="page-link" onClick="changeTablePage(0, 'pagination')">1</button></li>
+                  <li class="page-item pagination-item"><button class="page-link" onClick="changeTablePage(1, 'pagination')">2</button></li>
+                  <li class="page-item pagination-item"><button class="page-link" onClick="changeTablePage(2, 'pagination')">3</button></li>
+                  <li id="next" class="page-item">
+                    <button  class="page-link" onClick="changeTablePage(1, 'pager')" >Next</button>
                   </li>
                 </ul>
               </nav>
@@ -195,60 +192,131 @@
     <!-- footer --> <!-- Made by Leonardo Durante-->
     <footer class="bg-dark d-flex text-light flex-column text-center text-sm-left flex-sm-row p-3 justify-content-center justify-content-sm-between align-items-sm-end" style="height:95px;">
         <h6 class="mb">Group 6. All rights reserved® 2022.</h6>
-        <h6>Images taken from <a target="_blank" href="https://unsplash.com"><i>Unsplash.com</i></a>.</h6>
+        <h6>Images taken from <a class="text-light" target="_blank" href="https://unsplash.com"><i>Unsplash.com</i></a>.</h6>
     </footer>
 </main>
 
 
 
-    <!-- Table content and functtion to make pagination work with the table --> <!-- made by Leo M-->
-    <script>
-        const favoriteDishesList = [
-            //first page
-            {country: "China", dish: "Peking Duck" },
-            {country: "India", dish: "Khichdi" },
-            {country: "United States", dish: "Apple Pie" },
-            {country: "Indonesia", dish: "Nasi Goreng" },
-            {country: "Pakistan", dish: "Nihari" },
-            {country: "Brazil", dish: "Feijoada" },
-            {country: "Nigeria", dish: "Jollof Rice" },
-            {country: "Bangladesh", dish: "Hilsa Curry" },
-            {country: "Russia", dish: "Pelmeni" },
-            {country: "Mexico", dish: "Chilaquiles" },
-
-            //second page: 
-            {country: "Japan", dish: "Sushi" },
-            {country: "Ethiopia", dish: "Doro Wat" },
-            {country: "Philippines", dish: "Adobo" },
-            {country: "Egypt", dish: "Koshari" },
-            {country: "Vietnam", dish: "Pho" },
-            {country: "Congo", dish: "Poulet a la Moambe" },
-            {country: "Germany", dish: "Sauerbraten" },
-            {country: "Turkey", dish: "Lukum" },
-            {country: "Iran", dish: "Chelow Kabab" },
-            {country: "Thailand", dish: "Tom Yam Goong" },
-
-            //third page:
-            {country: "France", dish: "Pot-au-feu" },
-            {country: "Italy", dish: "Bolognese" },
-            {country: "South Africa", dish: "Bobotie" },
-            {country: "Tanzania", dish: "Mandazi" },
-            {country: "Myanmar", dish: "Mohinga" },
-            {country: "England", dish: "Bangers and Mash" },
-            {country: "Kenya", dish: "Nyama Choma" },
-            {country: "South Korea", dish: "Kimchi" },
-            {country: "Colombia", dish: "Bandeja Paisa" },
-            {country: "Spain", dish: "Paella" },
-        ]
-
-    </script>
+<!-- Table content and functtion to make pagination work with the table --> <!-- made by Leo M-->
 
 
+<script>
+    //array with dishes by country.
+    const favoriteDishesList = [
+        //first page
+        {country: "China", dish: "Peking Duck" },
+        {country: "India", dish: "Khichdi" },
+        {country: "United States", dish: "Apple Pie" },
+        {country: "Indonesia", dish: "Nasi Goreng" },
+        {country: "Pakistan", dish: "Nihari" },
+        {country: "Brazil", dish: "Feijoada" },
+        {country: "Nigeria", dish: "Jollof Rice" },
+        {country: "Bangladesh", dish: "Hilsa Curry" },
+        {country: "Russia", dish: "Pelmeni" },
+        {country: "Mexico", dish: "Chilaquiles" },
 
-   <!-- used for the popover of the carousel to display the name of the companies and the modal of the cards, nothing else  -->
+        //second page: 
+        {country: "Japan", dish: "Sushi" },
+        {country: "Ethiopia", dish: "Doro Wat" },
+        {country: "Philippines", dish: "Adobo" },
+        {country: "Egypt", dish: "Koshari" },
+        {country: "Vietnam", dish: "Pho" },
+        {country: "Congo", dish: "Poulet Moambe" },
+        {country: "Germany", dish: "Sauerbraten" },
+        {country: "Turkey", dish: "Lukum" },
+        {country: "Iran", dish: "Chelow Kabab" },
+        {country: "Thailand", dish: "Tom Yam Goong" },
+
+        //third page:
+        {country: "France", dish: "Pot-au-feu" },
+        {country: "Italy", dish: "Bolognese" },
+        {country: "South Africa", dish: "Bobotie" },
+        {country: "Tanzania", dish: "Mandazi" },
+        {country: "Myanmar", dish: "Mohinga" },
+        {country: "England", dish: "Bangers and Mash" },
+        {country: "Kenya", dish: "Nyama Choma" },
+        {country: "South Korea", dish: "Kimchi" },
+        {country: "Colombia", dish: "Bandeja Paisa" },
+        {country: "Spain", dish: "Paella" },
+    ];
+
+
+    let offset = 0; // controls the slice of the array that will be shwon
+
+    
+    const tableBody = document.getElementById("table-food"); //finds table body element
+    const previousButton = document.getElementById("previous"); //finds previous pager li element
+    const nextButton = document.getElementById("next"); // finds next pager li element
+    const paginationButtons = document.getElementsByClassName("pagination-item"); // finds the 3 pagination items. The class pagination-item does not have any especial attibute.
+
+
+
+    //change the current page of the table. It changes the offset to show a different slice of the array
+    function changeTablePage(value, type){
+    
+        const maxElementsPerView = 10;// maximum number of elements shown in the table at the same time.
+
+        //this is a scoped function that does not need to be called outside this module.
+        //this function handle the css class active of the pagination buttons.
+        const changeActivePagination = function(paginationIndex){
+            for(let i = 0; i < paginationButtons.length; i++){
+                if(i === paginationIndex){
+                    paginationButtons[i].classList.add("active");
+                } else {
+                    paginationButtons[i].classList.remove("active");
+                }
+            }
+        }
+
+
+        //when the pager is used I want to make it show the previuos or next 10 elements,
+        //but when the pagination is used I want to jump to the selected slice.
+        if(type === "pager"){
+            offset += maxElementsPerView * value;
+        
+        } else if(type === "pagination"){
+            offset = maxElementsPerView * value;
+        }
+
+        //checks if offset is out of boundaries, and enable/disable/activate pager/pagination buttons
+        if(offset <= 0){
+            offset = 0;
+            previousButton.classList.add("disabled");
+            nextButton.classList.remove("disabled");
+
+            changeActivePagination(0); //makes first element active
+
+        } else if (offset >= favoriteDishesList.length - maxElementsPerView){
+            offset = favoriteDishesList.length - maxElementsPerView;
+            previousButton.classList.remove("disabled");
+            nextButton.classList.add("disabled");
+
+            changeActivePagination(paginationButtons.length - 1); // makes last element active
+        
+        } else{
+            previousButton.classList.remove("disabled");
+            nextButton.classList.remove("disabled");
+
+            changeActivePagination(offset/maxElementsPerView); //makes the specified element active
+        }
+
+        tableBody.innerHTML = null; //remove previous objects from the view.
+
+        //adds new objects to the table
+        for (const foodAndCountry of favoriteDishesList.slice(offset, offset + maxElementsPerView)) {
+            tableBody.innerHTML += `<tr><td>${foodAndCountry.country}</td><td>${foodAndCountry.dish}</td></tr>`; //capitalize the key, and displays the key and the value
+        }
+    }
+</script>
+
+
+
+ <!-- used for the popover of the carousel to display the name of the companies and the modal of the cards, nothing else  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
+    
  
 </body>
 </html>
